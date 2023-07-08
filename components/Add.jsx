@@ -34,6 +34,7 @@ const Add = ({ setClose }) => {
         "https://api.cloudinary.com/v1_1/aaaaaaaa123/image/upload",
         data
       );
+      console.log(uploadRes)
 
       const { url } = uploadRes.data;
       const newProduct = {

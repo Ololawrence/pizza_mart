@@ -24,7 +24,7 @@ const Navbar = () => {
           <Link href={"/menu"} passHref>
             <li className={styles.listItem}>Menu</li>
           </Link>
-          <Image src="/img/logo.png" alt="" width="160px" height="69px" />
+          {/* <Image src="/img/logo.png" alt="" width="160px" height="69px" /> */}
           {/* <Link href={"/event"} passHref >
             <li className={styles.listItem}>Events</li>
           </Link> */}
@@ -39,8 +39,17 @@ const Navbar = () => {
           </Link>
         </ul>
       </div>
+
       <Link href="/cart" passHref>
         <div className={styles.item}>
+          <ul className={styles.list}>
+            <Link href={"/signup"} passHref>
+              <li className={styles.listItem}>Signup</li>
+            </Link>
+            <Link href={"/login"} passHref>
+              <li className={styles.listItem}>login</li>
+            </Link>
+          </ul>
           <div className={styles.cart}>
             <Image src="/img/cart.png" alt="" width="30px" height="30px" />
             <div className={styles.counter}>{quantity}</div>
